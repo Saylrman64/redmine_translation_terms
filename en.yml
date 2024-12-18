@@ -1,0 +1,245 @@
+# Enter your language changes here
+en:
+
+### Redmine Core changes
+  notice_unable_delete_version: Unable to delete initiative.
+  not_same_project: "doesn't belong to the same strategy"
+  notice_not_authorized_archived_project: The strategy you're trying to access has been archived.
+  error_issue_not_found_in_project: 'The issue was not found or does not belong to this strategy'
+  error_no_tracker_in_project: 'No tracker is associated to this strategy. Please check the Strategy settings.'
+  error_can_not_archive_project: This strategy cannot be archived
+  error_no_tracker_allowed_for_new_issue_in_project: "The strategy doesn't have any trackers for which you can create an issue"
+  error_no_projects_with_tracker_allowed_for_new_issue: "There are no strategies with trackers for which you can create an issue"
+  error_can_not_reopen_issue_on_closed_version: 'An issue assigned to a closed initiative cannot be reopened'
+  field_is_for_all: For all strategies
+  field_project: Strategy
+  field_parent: Substrategy of
+  field_subproject: Substrategy
+  field_default_version: Default initiative
+  field_fixed_version: Target Initiative
+  field_version: Initiative
+  field_default_version: Default initiative
+  setting_default_projects_public: New strategies are public by default
+  setting_cross_project_issue_relations: Allow cross-strategy issue relations
+  setting_cross_project_subtasks: Allow cross-strategy subtasks
+  setting_activity_days_default: Days displayed on strategy activity
+  setting_display_subprojects_issues: Display substrategies issues on main strategies by default
+  setting_sequential_project_identifiers: Generate sequential strategy identifiers
+  setting_new_project_user_role_id: Role given to a non-admin user who creates a strategy
+  setting_default_projects_modules: Default enabled modules for new strategies
+  setting_commit_cross_project_ref: Allow issues of all the other strategies to be referenced and fixed
+  setting_default_projects_tracker_ids: Default trackers for new strategies
+  setting_new_item_menu_tab: Strategy menu tab for creating new objects
+  permission_add_project: Create Strategy
+  permission_add_subprojects: Create substrategies
+  permission_delete_project: Delete the strategy
+  permission_edit_project: Edit strategy
+  permission_close_project: Close / reopen the strategy
+  permission_select_project_modules: Select strategy modules
+  permission_select_project_publicity: Set strategy public or private
+  permission_manage_project_activities: Manage strategy activities
+  permission_manage_versions: Manage initiatives
+  label_roadmap: Initiatives
+  label_project: Strategies
+  label_project_new: New strategy
+  label_project_plural: Roadmap
+  label_x_projects:
+    zero:  no strategies
+    one:   1 strategy
+    other: "%{count} strategies"
+  label_project_all: All Strategies
+  label_project_latest: Latest strategies
+  label_my_projects: My strategies
+  label_subproject_plural: Substrategies
+  label_subproject_new: New substrategy
+  label_and_its_subprojects: "%{value} and its substrategies"
+  label_public_projects: Public strategies
+  label_any_issues_in_project: any issues in strategy
+  label_any_issues_not_in_project: any issues not in strategy
+  label_no_issues_in_project: no issues in strategy
+  label_jump_to_a_project: Jump to a strategy...
+  label_user_mail_option_all: "For any event on all my strategies"
+  label_user_mail_option_selected: "For any event on the selected strategies only..."
+  label_version_sharing_descendants: With substrategies
+  label_version_sharing_hierarchy: With strategy hierarchy
+  label_version_sharing_tree: With strategy tree
+  label_version_sharing_system: With all strategies
+  label_project_copy_notifications: Send email notifications during the strategy copy
+  label_show_closed_projects: View closed strategies
+  label_attribute_of_project: "Strategy's %{name}"
+  label_cross_project_descendants: With substrategies
+  label_cross_project_tree: With strategy tree
+  label_cross_project_hierarchy: With strategy hierarchy
+  label_cross_project_system: With all strategies
+  label_add_projects: Add strategies
+  label_users_visibility_members_of_visible_projects: Members of visible strategies
+  label_version: Initiative
+  label_version_new: New initiative
+  label_version_plural: Initiatives
+  label_close_versions: Close completed initiatives
+  label_roadmap_no_issues: No issues for this initiative
+  label_current_version: Current initiative
+  label_show_completed_versions: Show completed initiatives
+  label_completed_versions: Completed initiatives
+  label_attribute_of_fixed_version: "Target initiative's %{name}"
+  label_latest_compatible_version: Latest compatible initiative
+  button_rollback: Rollback to this initiative
+  text_scm_command_version: Initiative
+  text_project_destroy_confirmation: Are you sure you want to delete this strategy and related data?
+  text_user_mail_option: "For unselected strategies, you will only receive notifications about things you watch or you're involved in (eg. issues you're the author or assignee)."
+  text_select_project_modules: 'Select modules to enable for this strategy:'
+  text_assign_time_entries_to_project: Assign reported hours to the strategy
+  text_own_membership_delete_confirmation: "You are about to remove some or all of your permissions and may no longer be able to edit this strategy after that.\nAre you sure you want to continue?"
+  text_project_closed: This strategy is closed and read-only.
+  description_choose_project: Strategies
+
+
+### progressive_projects_list plugin changes
+  setting_show_project_description: Show strategies' description
+  setting_show_project_progress: Show strategies' progress
+  setting_show_project_menu: Show strategies' menu
+  setting_show_only_for_my_projects: Show only for my strategies
+  setting_show_recent_projects: Show 'Recently viewed strategies'
+  label_recent_projects: Recently viewed strategies
+  label_sort_project: Sort Roadmap by
+  progressive_settings_custom_field: Custom Fields for Strategy sorting
+  project_custom_field: Strategy custom fields
+  version_custom_field: Initiative custom fields
+  sort_order: Sort order
+  sort_project_without_custom_field: Sort Strategies/Initiatives without custom field value by
+  alphabetical: Alphabetical
+  creation_date: Creation date
+  label_parent_project: Parent strategy
+
+
+### recurring_tasks plugin changes
+  label_no_project:         "No strategy."
+  label_belongs_to_project: "Belongs to strategy"
+
+
+### redemine_agile plugin changes
+  label_agile_version_add: Add Initiative
+  label_agile_board_backlog: Planning
+  label_agile_board: Sprint board
+  label_agile: Sprints
+  label_agile_default_chart: Initiative default chart
+  permission_manage_agile_verions: Manage initiative planning
+  label_agile_version_planning: Initiative planning
+  error_agile_version_transition: Can.t change issue initiative
+  label_agile_no_version_issues: Issues without initiative
+
+
+### redmine_blocks_layout/ plugin changes
+  projects: strategies
+
+
+### redmine_contacts plugin changes
+  notice_merged_warning: All the notes, strategies, tags and tasks attached to this person will be moved to choosed below. The contact will then be deleted.
+  label_crm_show_on_projects_show: Show contacts on strategies overview
+  label_crm_contacts_visibility_project: By strategies permissions
+  label_crm_deals_from_subprojects: Show deals from substrategies
+  label_crm_cross_project_contacts: Allow cross-strategy contacts relations
+  text_crm_no_deal_statuses_in_project: No deal statuses in strategy
+  label_crm_module_plural: Contact Modules
+
+
+### redmine_ics_export plugin changes
+  label_settings_rendering_versions: Initiative rendering as
+  option_settings_enhance_description_url_and_version: URL and initiative
+
+
+### redmine_issue_templates plugin changes
+  about_help_message: Each strategy can have custom help messages for templates.
+  about_template_help_message: You can see the instruction of issue templates on this strategy.
+  text_no_tracker_enabled: "Any trackers for this strategy have not been configured yet.\nPlease set them first because templates are assigned to strategy trackers. "
+  label_enabled_sharing: "Enabled sharing with strategy tree."
+  label_inherit_templates_help_message: "Inherit templates from parent strategy. (Only parent's templates are listed which marked as enabled sharing with strategy tree.)"
+  no_issue_templates_for_this_project: "No issue templates are defined for this strategy."
+  unused_tracker_at_this_project: "NOTE: This tracker is not defined to use for this strategy. Please re-define template setting if necessary."
+  label_enabledshaing_help_message: "If true, this template can be shared with descendant strategies. (You also have to activate Inherited template option at child strategy.)"
+  only_admin_can_associate_global_template: "Only Redmine administrator can associate global templates with this strategy."
+  label_apply_global_template_to_all_projects: "Apply Global issue templates to all the strategies."
+  note_apply_global_template_to_all_projects_setting_enabled: "This global issue template is applied to all the strategy by plugin setting."
+  note_project_local_template_override_global_template: "If strategy local template exists, override global templates and any global templates are not shown on create issue screen."
+  help_project_local_template_override_global_template: "If this option is activated, every global ticket templates will be applied to all strategies. If a strategy-specific template per tracker is set, it takes override and the global template is hidden on the new ticket creation screen."
+  warning_project_local_template_override_global_template: "Please be careful when registering global issue template, that contain confidential content you want to pay attention to. In case this option is activated, all the global templates will be applied to all strategies."
+
+
+### redmine_monitoring_controlling plugin changes
+  permission_view_home_monitoring_controlling: "View Gauge Issues Management"
+  permission_view_mc_time_mgmt_project: "View Gauge Time Management"
+  permission_view_mc_human_resource_mgmt_project: "View Gauge Resource Management"
+  monitoring_controlling_title: "Gauges"
+  project_module_monitoring_controlling_project: "Gauges by Strategy" 
+  monitoring_controlling_project: "Gauges by Strategy"
+  statuses_issue_label_title: "Issues by Statuses"
+  task_management_label_title: "Issues Management"
+  task_manageable_chart_title: "Manageable Issues"
+  task_manageable_chart_overdue_title: "Overdue Issues"
+  manageable_text_tip: "Issues with due date."
+  unmanageable_text_tip: "Issues without due date."
+  tasks_label: "issue(s)"
+  tasksof_label: "issue(s) of"
+  delivered_label: "Released"
+  tobedelivered_label: "To be Released"
+  time_mgmt_label_title: "Estimated hours and Spent hours"
+  hr_mgmt_label_title: "Resource Management"
+  hr_stackedcolumnbar_yaxis_label: "Count of Issues"
+  time_mgmt_version_label_title: "Initiative by Hours"
+
+
+### redmine_questions plugin changes
+  label_questions_search: 'Search all Forums in this Strategy for a specific topic or just a few words to match ...'
+  label_questions: 'Forums'
+### Not needed? -   label_questions_master: 'Forums Master'
+  permission_view_questions: View Forums
+
+
+### redmine_spent_time plugin changes
+  spent_time_title: "Spent Time"
+  label_total_time: "Total Time"
+  label_person: "Team Member"
+  select_project_option: "Select Strategy"
+  permission_view_every_project_spent_time: "View every strategy spent time"
+  not_allowed_error: "It's not allowed to log time to strategy '%{project}'"
+  issue_not_in_project_error: "Issue #%{issue} isn't in strategy '%{project}'"
+  cannot_find_project_error: "Cannot find strategy with id=%{project_id}"
+  project_is_mandatory_error: "You must select a strategy"
+  label_all_time: "All time"
+
+
+### easy_gantt plugin changes
+  label_easy_gantt: "Gantt"
+  heading_easy_gantts_issues: "Gantt"
+  button_project_menu_easy_gantt: "Gantt"
+
+
+### redmine_multiprojects_issue plugin changes
+  related_projects: "Related strategies"
+  modify_projects: "Edit strategies list"
+  project: "strategy"
+  text_journal_projects_deleted: "deleted strategies"
+  text_journal_projects_added: "added strategies"
+  text_journal_project_deleted: "deleted strategy"
+  text_journal_project_added: "added strategy"
+  field_related_projects: "Related strategies"
+  multiprojects_selection_available_custom_fields: "Available custom fields to quickly select strategies"
+  selected_projects: "Selected strategies"
+  hide_non_selected_projects: "Hide non selected strategies"
+  show_all_projects: "Show all strategies"
+
+
+### redmine_people plugin changes
+  label_people_at_department: "in"
+  label_people_person: "Team Member"
+  label_people_edit_person: "Editing team member information"
+  label_people: "Team"
+  label_people_new_person: "New team member"
+  label_people_all: "Show all team members"
+  label_people_new_people: "New team members"
+  people_label_bulk_edit_selected_people: "Edit all selected team members"
+  label_people_report_plural: "Team Member reports"
+
+
+### redmine_drive plugin changes
+  label_drive: Files
