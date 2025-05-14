@@ -5,7 +5,7 @@ en:
   notice_unable_delete_version: Unable to delete initiative.
   not_same_project: "doesn't belong to the same strategy"
   notice_not_authorized_archived_project: The strategy you're trying to access has been archived.
-  error_issue_not_found_in_project: 'The issue was not found or does not belong to this strategy'
+  error_wissue_not_found_in_project: 'The issue was not found or does not belong to this strategy'
   error_no_tracker_in_project: 'No tracker is associated to this strategy. Please check the Strategy settings.'
   error_can_not_archive_project: This strategy cannot be archived
   error_no_tracker_allowed_for_new_issue_in_project: "The strategy doesn't have any trackers for which you can create an issue"
@@ -143,28 +143,14 @@ en:
   label_crm_module_plural: Contact Modules
 
 
-### redemine_dmsf plugin changes
-  dmsf: Documents
-  menu_dmsf: Documents
-  project_module_dmsf: Documents
-  error_entry_project_does_not_match_current_project: "Entry strategy doesn't match current strategy"
-  link_user_preferences: Your strategy document preferences
-  user_is_not_project_member: You are not a member of the strategy
-  project_module_dmsf: Documents
-  warning_no_project_to_copy_file_to: No strategy to copy file to
-  field_target_project: Target strategy
-  error_target_folder_same: Target folder and strategy are the same as current
-  warning_no_project_to_copy_folder_to: No strategy to copy folder to
-  label_target_project: Target strategy
-  label_source_project: Source strategy
-
-
 ### redmine_ics_export plugin changes
   label_settings_rendering_versions: Initiative rendering as
   option_settings_enhance_description_url_and_version: URL and initiative
 
 
 ### redmine_issue_templates plugin changes
+  issue_templates: Issue Templates
+  issue_template: Issue Template
   about_help_message: Each strategy can have custom help messages for templates.
   about_template_help_message: You can see the instruction of issue templates on this strategy.
   text_no_tracker_enabled: "Any trackers for this strategy have not been configured yet.\nPlease set them first because templates are assigned to strategy trackers. "
@@ -207,49 +193,40 @@ en:
 ### redmine_questions plugin changes
   label_questions_search: 'Search all Forums in this Strategy for a specific topic or just a few words to match ...'
   label_questions: 'Forums'
+### Not needed as we use :after css to add word Master -   label_questions_master: 'Forums Master'
 
-### Not needed? -   label_questions_master: 'Forums Master'
-  permission_view_questions: View Forums Master
+  label_questions_new: New Post
+  label_questions_related_questions: Related Posts
+  label_question_successful_update: Post successful updated
+  label_questions_vote_own: Vote own Post
+  button_questions_to_issue: Convert to Issue
+
+  label_questions_section: Category
+  label_questions_sections_plural: Categories
+  label_questions_section_new: New Category
+  label_questions_section_type: Category type
+
+  label_question_plural: Questions
+  label_questions_vote_own: Vote own questions
 
 
 ### redmine_spent_time plugin changes
+  spent_time_title: "Spent Time"
+  label_total_time: "Total Time"
+  label_person: "Team Member"
   select_project_option: "Select Strategy"
   permission_view_every_project_spent_time: "View every strategy spent time"
   not_allowed_error: "It's not allowed to log time to strategy '%{project}'"
   issue_not_in_project_error: "Issue #%{issue} isn't in strategy '%{project}'"
   cannot_find_project_error: "Cannot find strategy with id=%{project_id}"
   project_is_mandatory_error: "You must select a strategy"
-
-
-### redmine_tweaks plugin changes
-  account_login_info: "This text message will be shown at the login page and should be used for registration information. These settings are active in all strategies."
-  disabled_modules_info: "Modules which should not be available for selection within the strategies. If these modules already activated in existing strategies, you will have to change and re-save the respective strategy settings first."
-  global_footer_info: 'Enter a strategy wide wiki footer here.'
-  global_sidebar_info: "Enter a strategy wide available text message here. This sidebar text will be displayed at the strategy overview, the issue pages and the wiki pages."
-  global_wiki_footer_info: 'Enter a strategy wide wiki footer here. In case a strategy specific wiki footer is used by "Wiki Extensions", this will be preferably displayed instead.'
-  global_wiki_header_info: 'Enter a strategy wide wiki header here. In case a strategy specific wiki header is used by "Wiki Extensions", this will be preferably displayed instead.'
-  global_wiki_sidebar_info: 'Enter a strategy wide available text message for your wiki sidebar, here. This sidebar text will be displayed at the wiki pages only. Use this space for Macros like "Last changed pages" for example. In case a strategy specific sidebar is used (wiki page), this will be preferably displayed in the sidebar instead.'
-  label_global_footer: "Strategy wide footer"
-  label_global_wiki_footer: "Strategy wide wiki footer"
-  label_global_wiki_header: "Strategy wide wiki header"
-  label_project_list: "Strategy list"
-  label_project_overview_content: "Strategy guide"
-  new_ticket_message_info: "A note will be shown to everyone who wants to add a new issue. For example you can enter acceptance tests or issue rules here. These settings are used strategy wide."
-  project_overview_content_info: "Here you can add your text, which will be shown on the strategy overview page. For example you can link to a wiki page, which is/should be strategy wide available to every team member. The aim is to reach a better strategy standard and to maintain a unique wiki structure."
-  rule_issue_auto_assign_info: 'Use Case: The issue author does not know whom to assign the issue or who will be responsible for solving the task. In that case the issue for example with the status "To Do" is automatically assigned to the first group, which does contain a user of the pre-selected strategy manager role.'
-  top_projects_help: Here you can define contents and settings for your strategy page.
-  top_rules_help: "Here you can define rules, which are used in issues of all strategies."
+  label_all_time: "All time"
 
 
 ### easy_gantt plugin changes
   label_easy_gantt: "Gantt"
   heading_easy_gantts_issues: "Gantt"
   button_project_menu_easy_gantt: "Gantt"
-
-### Tab function plugin changes
-  tab_label_tab_name: "Tab Name"
-  tab_label_tab_text: "Tab Text"
-  top_menu_tab_settings: "Top menu tab settings"
 
 
 ### redmine_multiprojects_issue plugin changes
@@ -269,7 +246,7 @@ en:
 
 ### redmine_people plugin changes
   label_people_at_department: "in"
-  label_people_person: "Team member"
+  label_people_person: "Team Member"
   label_people_edit_person: "Editing team member information"
   label_people: "Team"
   label_people_new_person: "New team member"
@@ -279,10 +256,6 @@ en:
   label_people_report_plural: "Team Member reports"
 
 
-### redmine_sidebar_toc_pt plugin changes
-
-  project_tree: "Strategy tree"
-
-
 ### redmine_drive plugin changes
   label_drive: Files
+  label_redmine_drive: File Depot
