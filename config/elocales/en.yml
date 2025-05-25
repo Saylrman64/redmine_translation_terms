@@ -118,16 +118,21 @@ en:
 
 
 ### redemine_agile plugin changes
-  label_agile_version_add: Add Initiative
-  label_agile_board_backlog: Planning
-  label_agile_board: Sprint board
   label_agile: Sprints
+  label_agile_board: Sprint board
+  label_agile_board_backlog: Planning
+  label_agile_version_plural: Initiatives
+  label_agile_version_add: Add Initiative
+  label_agile_version_board_plural: Agile initiative boards
+  label_agile_version_board_edit: Edit agile initiative board
+  label_agile_version_query_new: New Agile initiatives query
+  label_agile_version_my_boards: My agile initiaitve boards
   label_agile_default_chart: Initiative default chart
-  permission_manage_agile_verions: Manage initiative planning
   label_agile_version_planning: Initiative planning
-  error_agile_version_transition: Can.t change issue initiative
   label_agile_no_version_issues: Issues without initiative
-
+  error_agile_version_transition: Can.t change issue initiative
+  field_closed_versions: Closed initiatives
+  permission_manage_agile_verions: Manage initiative planning
 
 ### redmine_blocks_layout/ plugin changes
   projects: strategies
@@ -189,6 +194,7 @@ en:
   hr_stackedcolumnbar_yaxis_label: "Count of Issues"
   time_mgmt_version_label_title: "Initiative by Hours"
 
+  label_board_plural: Old Forums
 
 ### redmine_questions plugin changes
   label_questions_search: 'Search all Forums in this Strategy for a specific topic or just a few words to match ...'
